@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="LocomanCătălin" />
+        <title>Tehnici de programare</title>
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Demo CSS -->
+        <link rel="stylesheet" href="css/demo.css" />
+    </head>
+    <body>
+        <header class="intro">
+            <h1>Tehnici de programare</h1>
+            <p>Locoman Cătălin</p>
+            <div id="nav">
+                <ul>
+                    <a href="./index.html"><li>Pagina de pornire</li></a>
+                    <a href="./triere.html"><li>Metoda Trierii</li></a>
+                    <a href="./recursivitate.html"><li>Metoda Recursivă</li></a>
+                    <a href="./greedy.html"><li>Metoda Greedy</li></a>
+                    <a href="./backtracking.html"><li>Metoda Backtracking</li></a>
+                </ul>
+
+                <label for="check" id="menubtn">
+                    <input type="checkbox" id="check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <div class="slider-container">
+                <div class="slides fade">
+                    <div class="slider-numbers">1/2</div>
+                    <div class="slider-image"><img src="./resources/slides/1.png" alt="slide_1" /></div>
+                    <div class="slider-caption">Slide-ul 1</div>
+                </div>
+                <!-- slider -->
+
+                <div class="slides fade">
+                    <div class="slider-numbers">2/2</div>
+                    <div class="slider-image"><img src="./resources/slides/2.png" alt="slide_2" /></div>
+                    <div class="slider-caption">Slide-ul 2</div>
+                </div>
+                <!-- slider -->
+
+                <!-- Slider Next and Previous buttons -->
+                <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+                <a class="next" onclick="plusIndex(+1)">&#10095;</a>
+
+                <!-- Slider Selection Bullets -->
+                <div class="slider-bullets" id="slider-bullets">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                </div>
+                <!-- Slider Bullets -->
+            </div>
+        </main>
+
+        <footer class="credit">Realizat de Locoman Cătălin</footer>
+
+        <!-- Script JS -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
